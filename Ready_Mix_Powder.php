@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./external/all.min.css">
+    <link rel = "icon"  href = "./images/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>PRALINECO</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav_res">
+    <div class="popup_slider_image w-100 h-100">
+        <div class="container popping d-flex justify-content-center align-items-center">
+            <i class="bi bi-x btn_cutom " id="close_poping"></i>
+            <i class="bi bi-arrow-right p-3 d-flex justify-content-center align-items-center" id="right_pop_slider"></i>
+            <i class="bi bi-arrow-left p-3 d-flex justify-content-center align-items-center"id="left_pop_slider"></i>
+            <div class="image_container">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar px-lg-5 navbar-expand-lg my-0 bg-black navbar-light sticky-top" id="nav_res">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="./images/logo.png" class="image" alt="">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="bi bi-text-right fs-2 text-light"></span>
+            </button>
+            <div class="navbar-collapse text-center collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-row  flex-column-reverse">
+                    <li class="nav-item "><a class="nav-link  me-lg-3" number="1" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active_om me-lg-3" number="0" href="#prooo">Our Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="landing_custom h-cutmize d-flex flex-column justify-content-center align-items-center">
+        <svg id="wave" class="d-block" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#BD9B60" d="M0,90L10,86.7C20,83,40,77,60,68.3C80,60,100,50,120,41.7C140,33,160,27,180,23.3C200,20,220,20,240,26.7C260,33,280,47,300,56.7C320,67,340,73,360,75C380,77,400,73,420,63.3C440,53,460,37,480,40C500,43,520,67,540,68.3C560,70,580,50,600,48.3C620,47,640,63,660,60C680,57,700,33,720,35C740,37,760,63,780,73.3C800,83,820,77,840,65C860,53,880,37,900,38.3C920,40,940,60,960,63.3C980,67,1000,53,1020,48.3C1040,43,1060,47,1080,43.3C1100,40,1120,30,1140,25C1160,20,1180,20,1200,21.7C1220,23,1240,27,1260,26.7C1280,27,1300,23,1320,26.7C1340,30,1360,40,1380,50C1400,60,1420,70,1430,75L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+        <span class="h2 text_custom">Our Products</span>
+        <div class="row d-flex  text-white flex-row justify-content-center align-items-center">
+            <div class="row col-6 col-lg-3">
+                <a class="cu_tom_ancor" href="./Ready_Belgium_Chocolate.php">
+                    <p class="fs-6 custom_cursor "> Ready Belgium Chocolate</p>
+                </a>
+                <a class="cu_tom_ancor " href="./creams.php">
+                    <p class="fs-6 custom_cursor ">Cream</p>
+                </a>
+                <a class="cu_tom_ancor position-relative" href="./Ready_Mix_Powder.php">
+                    <i class="bi bi-check fs-4 pos_right_mark"></i>
+                    <p class="fs-6 custom_cursor text_custom">Ready Mix Powder</p>
+                </a>
+                <a class="cu_tom_ancor" href="./Soft_Ice_cream_Powder.php"><p class="fs-6 custom_cursor ">Soft Ice cream Powder</p></a>
+            </div>
+            <div class="row col-6 col-lg-3">
+                <a class="cu_tom_ancor" href="./Toffee_Tins_Sweet_Candies.php"><p class="fs-6 custom_cursor ">Toffee Tins & Sweet Candies</p></a>
+                <a class="cu_tom_ancor" href="./Syrups.php"><p class="fs-6 custom_cursor ">Syrups</p></a>
+                <a class="cu_tom_ancor" href="./souses.php"><p class="fs-6 custom_cursor ">Sauces</p></a>
+                <a class="cu_tom_ancor" href="./Raw_Chocolate.php"><p class="fs-6 custom_cursor ">Raw Chocolate</p></a>
+            </div>
+        </div>
+        <svg id="wave"  class="ssv d-lg-block" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#BD9B60" d="M0,90L10,86.7C20,83,40,77,60,68.3C80,60,100,50,120,41.7C140,33,160,27,180,23.3C200,20,220,20,240,26.7C260,33,280,47,300,56.7C320,67,340,73,360,75C380,77,400,73,420,63.3C440,53,460,37,480,40C500,43,520,67,540,68.3C560,70,580,50,600,48.3C620,47,640,63,660,60C680,57,700,33,720,35C740,37,760,63,780,73.3C800,83,820,77,840,65C860,53,880,37,900,38.3C920,40,940,60,960,63.3C980,67,1000,53,1020,48.3C1040,43,1060,47,1080,43.3C1100,40,1120,30,1140,25C1160,20,1180,20,1200,21.7C1220,23,1240,27,1260,26.7C1280,27,1300,23,1320,26.7C1340,30,1360,40,1380,50C1400,60,1420,70,1430,75L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+    </header>
+    <section class="product mt-6 overflow-hidden" id="prooo">
+       <div class="container">
+            <div class="row">
+                <img src="./images/logo.png" class="w-10" alt="">
+                    <h2 class="heading text-center my-4">Our Products</h2>
+                    <div class="total_imagess col-lg-11 my-5 mx-auto d-flex flex-wrap flex-column flex-lg-row justify-content-lg-between">
+                        <?php 
+                            foreach(glob('./images/Ready Mix Powder/*.*') as $filename){
+                                echo '<div class="w-20 con_im position-relative mx-auto my-2" >
+                                <div class="services_frame" bis_skin_checked="1">
+                                    <img src="'.$filename.'" class="img-fluid" alt="">
+                                </div> 
+                                <p class="text_custom fs-4 text-center mt-3">'.substr(substr($filename,26,strlen($filename)-25),0,-4).'</p>
+                                </div> 
+                                ';
+                            }
+                        ?>
+                    </div>
+            </div>
+       </div>
+    </section>
+    <section class="contact-us mt-4 overflow-hidden" id="conta">
+        <div class="container">
+            <div class="row">
+                <div class="info col-lg-4 text-white" data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out">
+                    <h2 class="h2 my-3 text_custom">Contact Us</h2>
+                    <div class="footer-content" bis_skin_checked="1">
+                        <ul>
+                            <li class="lh-base mb-2"><i class="fa fa-map-marker me-2" aria-hidden="true"></i> King Mansour Bin Abdulaziz St - P.O Box 12612 - Riyadh - Saudi Arabia</li>
+                            <li class="lh-base mb-2"><i class="fa fa-phone me-2" aria-hidden="true"></i>920007476</li>
+                            <li class="lh-base mb-2"><i class="fa-brands fa-whatsapp me-2"></i>+96653 504 6398</li>
+                            <li class="lh-base mb-2"><i class="fa-regular fa-envelope me-2"></i>info@pralineco.com</li>
+                            <li class="lh-base mb-2"><i class="fa-regular fa-envelope me-2"></i>www.pralineco.com</li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-center align-item-center w-75">
+                        <div class=" d-flex justify-content-center align-item-center position-relative mx-auto">
+                            <div class="services_frame  me-2" bis_skin_checked="1">
+                                <img src="./images/Round-Border-1--Arvin61r58.png" class="om" alt="">
+                                <a href="https://www.instagram.com/pralineco/?igshid=YmMyMTA2M2Y%3D" class="cu_tom_ancor"><i class="fa-brands fa-instagram insta"></i></a>
+                            </div>
+                            <div class="services_frame me-2" bis_skin_checked="1">
+                                <img src="./images/Round-Border-1--Arvin61r58.png" class="om" alt="">
+                                <a href="https://www.facebook.com/Pralineco/" class="cu_tom_ancor"><i class="fa-brands fa-facebook-f face"></i></a>
+                            </div>
+                            <div class="services_frame me-2" bis_skin_checked="1">
+                                <img src="./images/Round-Border-1--Arvin61r58.png" class="om" alt="">
+                                <a href="https://twitter.com/pralineco_sa" class="cu_tom_ancor"><i class="bi bi-twitter twitter"></i></a>
+                            </div>
+                            <div class="services_frame" bis_skin_checked="1">
+                                <img src="./images/Round-Border-1--Arvin61r58.png" class="om" alt="">
+                                <a href="https://www.linkedin.com/company/pralineco/about/" class="cu_tom_ancor"><i class="bi bi-linkedin linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <span class="rounded-custom p-4 face"><i class="fa-brands fa-facebook-f"></i></span> -->
+                    <!-- <span class="rounded-custom p-4 insta"><i class="fa-brands fa-instagram"></i></span> -->
+                </div>
+                <div class="location col-lg-8 text-white px-5 mb-cur" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-out">
+                    <h2 class="h2 my-3 text_custom">Our Location</h2>
+                    <iframe class="w-100 h-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.772965569584!2d46.699815799999996!3d24.665941899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03369588b629%3A0xf1c0ab4523781136!2z2LTYsdmD2Kkg2YLZitin2K_Yp9iqINmE2YTYqtis2KfYsdipINmI2KrZgtmG2YrYqSDYp9mE2YXYudmE2YjZhdin2Ko!5e0!3m2!1sen!2ssa!4v1662567788941!5m2!1sen!2ssa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="to_toping" class="d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+    <div id="wats">
+        <a href="https://wa.me/966535046398" class="de"><i class="fa-brands fa-whatsapp me-2 wTS-COLOR"></i></a>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Setting</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form action="index.php" id="form_setting" method='POST' enctype='multipart/form-data'>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text_custom">Password</label>
+                <input  type="text" class="form-control" name="passs" id="text_pass" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text_custom">Upload Image</label>
+                <input type="file" class="form-control" name="img_upload" id="upload_file">
+            </div>
+            <div class="col-auto">
+                <input type="submit" id="send" name="img_submit" class="btn btn-primary mb-3">
+            </div>
+          </form>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+        <script>
+        // slider images
+        let poppop=document.querySelector('.popup_slider_image');
+        let holder_slider_images=document.querySelector('.popup_slider_image .container .image_container');
+        let images_slider=Array.from(document.querySelectorAll('.product .container .row .total_imagess .con_im .services_frame img'));
+        let left=document.getElementById('left_pop_slider');
+        let right=document.getElementById('right_pop_slider');
+        let current;
+        // let start_left=;
+        // let start_right=;
+        images_slider.forEach(element=>{
+            element.addEventListener('click',(e)=>{
+                current=images_slider.indexOf(e.target);
+                poppop.style.display="flex";    
+                let source=e.target.src;
+                let text=element.parentElement.nextElementSibling.innerHTML;
+                holder_slider_images.innerHTML=`
+                <h2 class="fs-2 text_custom mb-3 text-center" id="header_text">${text}</h2>
+                <img src="${source}" id="own_image_Max_pow" class="img-fluid " alt="">
+                `;
+            });
+        });
+        document.getElementById('close_poping').addEventListener('click',()=>{
+            poppop.style.display="none";
+        });
+        // current
+        left.addEventListener('click',()=>{
+            if(current>0){
+                current--;
+                document.getElementById('own_image_Max_pow').remove();
+                document.getElementById('header_text').remove();
+                let source=images_slider[current].src;
+                let text=images_slider[current].parentElement.nextElementSibling.innerHTML;
+                holder_slider_images.innerHTML=`
+                <h2 class="fs-2 text_custom mb-3 text-center" id="header_text">${text}</h2>
+                <img src="${source}" id="own_image_Max_pow" class="img-fluid" alt="">
+                `;
+            }
+        });
+        right.addEventListener('click',()=>{
+            if(current<images_slider.length-1){
+                current++;
+                document.getElementById('own_image_Max_pow').remove();
+                document.getElementById('header_text').remove();
+                let source=images_slider[current].src;
+                let text=images_slider[current].parentElement.nextElementSibling.innerHTML;
+                holder_slider_images.innerHTML=`
+                <h2 class="fs-2 text_custom mb-3 text-center" id="header_text">${text}</h2>
+                <img src="${source}" id="own_image_Max_pow" class="img-fluid" alt="">
+                `;
+            }
+        });
+    </script>
+    <script>
+        const myCarouselElement = document.getElementById('carouselExampleIndicators');
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 2500,
+        wrap: true
+        });
+    </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
+<!-- <h3 class="text_custom text-center mt-3">Ready Belgium Chocolate</h3> -->
